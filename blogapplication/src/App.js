@@ -7,6 +7,7 @@ import {BrowserRouter as Router,Routes,Route,Link} from "react-router-dom";
 import { auth } from "./Components/firebase-config";
 import { useState } from "react";
 import {signOut} from "firebase/auth";
+import CommentSection from "./Components/CommentSection";
 
 function App() {
   const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
@@ -37,6 +38,7 @@ function App() {
         <Route path="/" element={<Home isAuth={isAuth} />} />
         <Route path="/createpost" element={<Createpost isAuth={isAuth} />} />
         <Route path="/login" element={<Login setIsAuth={setIsAuth} />} />
+        <Route path="/CommentSection" element={<CommentSection/>} />
       </Routes>
     </Router>
   );

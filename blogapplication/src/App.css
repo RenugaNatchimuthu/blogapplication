@@ -187,3 +187,73 @@ textarea {
   overflow: hidden;
   overflow-y: auto;
 }
+.comment-section {
+  margin: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  max-width: 400px;
+  background-color: #f9f9f9;
+}
+
+.comment-section h2 {
+  margin-bottom: 10px;
+}
+
+.comment-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.comment-section li {
+  margin: 5px 0;
+}
+
+.comment-input {
+  display: flex;
+  margin-top: 10px;
+}
+
+.comment-input input {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.comment-form {
+  width:100%;
+  max-width :500px;
+  padding: 5px 10px;
+  background-color: #c7cfd6;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.comment-form-textarea
+{
+  width:100%;
+  max-width :400px;
+  padding: 5px 10px;
+  background-color: #b2b4b6;
+  color: #f0e3e3;
+  /* border: none; */
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.comment-form-submit
+{
+    margin-left: 550px;
+    display: flex;
+    justify-content: flex-end;
+ 
+  /* margin-bottom:250px; */
+  width:10%;
+}
+
+.comment-input button:hover {
+  background-color: #0056b3;
+}
